@@ -4,16 +4,14 @@ using namespace std;
 class Float {
 public:
     float a;
-    friend void operator ++ (Float&);
+    void operator++ () {
+        a=a+1;
+    }
 };
-
-void operator ++ (Float& b) {
-   b.a++;
-}
 
 int main() {
     Float b;
-    b.a = 3.3;
+    b.a = 3;
     cout << b.a << endl;
     ++b;
     cout << b.a << endl;
