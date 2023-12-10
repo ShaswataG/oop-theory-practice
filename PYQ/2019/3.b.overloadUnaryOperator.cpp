@@ -11,8 +11,6 @@ void operator ++ (Float& b) {
    b.a++;
 }
 
-
-
 int main() {
     Float b;
     b.a = 3;
